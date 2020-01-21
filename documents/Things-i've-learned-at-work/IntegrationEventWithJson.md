@@ -20,8 +20,6 @@
       - 역시 중간 매개체인 Broker가 있기 때문에 어플리케이션의 도메인이 다르더라도 Message Queue(Broker)에 접근만 가능하다면 처리가 가능하기 때문.
 
 
-
-
 ### Integration Event with Pub-Sub Pattern
 - 통합 이벤트를 AWS의 SNS에 게시하는 방식으로 사용하고 있는데, Json 객체로 주고 받는다.
 
