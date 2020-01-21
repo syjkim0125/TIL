@@ -11,7 +11,7 @@
       반대로 Subscriber 역시 Publisher의 위치나 존재를 알 필요 없이 Broker에 할당된 작업만 모니터링 하다가 할당 받아서 작업하면 되기 때문에 Publisher와 Subscriber가 서로 알 필요 없다.
 
     + Observer패턴보다 Pub-Sub패턴이 더 결합도가 낮다.
-      Pub-Sub은 서로의 존재를 알 필요가 없기 때문
+      - Pub-Sub은 서로의 존재를 알 필요가 없기 때문
 
     + Observer패턴은 대부분 동기 방식이고, Pub-Sub패턴은 대부분 비동기 방식이다.
       Broker로 Message Queue를 많이 사용하기 때문이다.
