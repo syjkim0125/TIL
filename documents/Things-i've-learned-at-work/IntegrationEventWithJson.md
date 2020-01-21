@@ -6,7 +6,7 @@
 ## 이벤트와 관련된 패턴
 - Observer 패턴과 Pub-Sub 패턴
     + Observer패턴은 Subject와 서로 인지하고 있다. 하지만, Pub-Sub은 서로를 전혀 몰라도 상관없다.
-      Observer패턴의 경우 Subject에 Observer를 등록하고 Subject가 직접 Observer에 알려주어야 한다.
+      - Observer패턴의 경우 Subject에 Observer를 등록하고 Subject가 직접 Observer에 알려주어야 한다.
       Pub-Sub패턴의 경우 Publisher가 Subscriber의 위치나 존재를 알 필요 없이 Message Queue와 같은 Broker 역할을 하는 중간지점에 메시지를 던져놓기만 하면 된다.
       반대로 Subscriber 역시 Publisher의 위치나 존재를 알 필요 없이 Broker에 할당된 작업만 모니터링 하다가 할당 받아서 작업하면 되기 때문에 Publisher와 Subscriber가 서로 알 필요 없다.
 
@@ -14,10 +14,10 @@
       - Pub-Sub은 서로의 존재를 알 필요가 없기 때문
 
     + Observer패턴은 대부분 동기 방식이고, Pub-Sub패턴은 대부분 비동기 방식이다.
-      Broker로 Message Queue를 많이 사용하기 때문이다.
+      - Broker로 Message Queue를 많이 사용하기 때문이다.
 
     + Observer패턴은 단일 도메인 하에서 구현되어야 하나 Pub-Sub패턴은 크로스 도메인 상황에서도 구현 가능하다.
-      역시 중간 매개체인 Broker가 있기 때문에 어플리케이션의 도메인이 다르더라도 Message Queue(Broker)에 접근만 가능하다면 처리가 가능하기 때문.
+      - 역시 중간 매개체인 Broker가 있기 때문에 어플리케이션의 도메인이 다르더라도 Message Queue(Broker)에 접근만 가능하다면 처리가 가능하기 때문.
 
 
 ### Integration Event with Pub-Sub Pattern
