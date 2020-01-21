@@ -43,7 +43,7 @@ export class PaymentConfirmedEvent extends DomainEvent {
 ```
 - balance는 예치금의 잔액을 의미한다.
 
-결제가 완료된 후, 결제 완료 도메인 이벤트로 balance가 넘어오게 되는데 card일 때는 이 balance가 필요가 없으므로 optional을 사용하였다.
+결제가 완료된 후, 결제 완료 도메인 이벤트로 balance가 넘어오게 되는데 결제 수단이 Card일 때는 이 balance가 필요가 없으므로 optional을 사용하였다.
 다만, 여기서 주의할 점은 class validator인데 @IsNumber()만 사용하면, optional이더라도 validation check를 하기 때문에 오류를 낸다.
 따라서, @IsOptional()을 반드시 붙여줘야 한다.
 
