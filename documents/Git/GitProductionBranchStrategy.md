@@ -1,4 +1,4 @@
-# Git 전략
+# Git Production 브랜치 전략
 - Production 브랜치에서 새로운 release 브랜치를 딴 후, master 브랜치에서 변경된 점들을 cherry-pick을 이용하여 commit후, production에 배포한다.
 - -> master 브랜치에서 변경된 점들은 내가 Merge한 PR이 될 것이다. 이 PR은 Master의 commit hash를 통해 cherry-pick 한다.
 
