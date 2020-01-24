@@ -35,9 +35,9 @@ A: - 답변 드리겠습니다.
 → production과 master의 차이가 있으므로 compare & pull request는 계속 뜬다. 오류가 아니다.
 
 -> production 브랜치를 pull 해올 때, 다음과 같이 pull 해오면 된다. (원격 저장소 pull 커맨드)
-``
+```
 git checkout -t origin/production
-``
+```
 
 ## Refer
 - Git 원격 저장소 pull
